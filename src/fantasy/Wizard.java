@@ -1,17 +1,13 @@
 //Chen, Susan
 package fantasy;
 
-public class Wizard extends CharactersInheritance implements CharactersInterface{
-//	String name;
-//	int health;
-	int gold;
+public class Wizard extends CharactersInheritance {
+	int health = 100;
+	int gold = 0;
 	final static int maxGold = 20;
 	
-	Wizard(String name){
-		type = "Wizard";
-		this.name = name;
-		health = 100;
-		gold = 0;
+	Wizard(String name, String type){
+		super("Wizard", name);
 	}
 	
 	/**

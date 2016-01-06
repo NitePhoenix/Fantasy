@@ -2,9 +2,14 @@
 package fantasy;
 
 public class CharactersInheritance {
-	String type;
-	String name;
-	int health;
+	protected String type;
+	protected String name;
+	protected int health;
+	
+	CharactersInheritance(String type, String name){
+	this.type = type;
+	this.name = name;
+	}
 	
 	/**
 	 * Drinking potion restores health.

@@ -1,17 +1,13 @@
 //Chen, Susan
 package fantasy;
 
-public class Ogre extends CharactersInheritance implements CharactersInterface{
-//	String name;
-//	int health;
-	int gold;
+public class Ogre extends CharactersInheritance {
+	int health = 100;
+	int gold = 0;
 	final static int maxGold = 0;
 	
-	Ogre(String name){
-		type = "Ogre";
-		this.name = name;
-		health = 100;
-		gold = 0;
+	Ogre(String name, String type){
+		super("Ogre", name);
 	}
 	
 	/**
