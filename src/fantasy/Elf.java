@@ -5,15 +5,13 @@ package fantasy;
  * @author S. Camilleri
  *
  */
-class Elf extends CharactersInheritance implements CharactersInterface {
-	int gold;
+class Elf extends CharactersInheritance {
+	int gold = 0;
+	int health = 100;
 	final static int maxGold = 8;
 	
-	Elf(String name){
-		type = "Elf";
-		this.name = name;
-		health = 100;
-		gold = 0;
+	Elf(String type, String name){
+		super("Elf", name);
 	}
 	
 	/**

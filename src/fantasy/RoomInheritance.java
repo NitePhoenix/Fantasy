@@ -8,19 +8,17 @@ public class RoomInheritance {
 	int gold;
 	boolean radioactive;
 	
-	ArrayList<CharactersInterface> characters;
+	ArrayList<Elf> characters;
 	
-	//FIND THIS
-	RoomInheritance(String name, int gold, boolean radioactive)
-	{
+	RoomInheritance(String name, int gold, boolean radioactive){
 		this.name = name;
 		this.gold = gold;
 		this.radioactive = radioactive;
 		
-		characters = new ArrayList<Character>();
+		characters = new ArrayList<Elf>();
 	}
 	
-	void enter(CharactersInterface character){
+	void enter(Elf character){
 		characters.add(character);
 		
 		if (radioactive)
@@ -33,7 +31,7 @@ public class RoomInheritance {
 	 * Remove character from room.
 	 * @param character
 	 */
-	void exit(CharactersInterface character){
+	void exit(Elf character){
 		characters.remove(character);
 	}
 	
@@ -42,8 +40,7 @@ public class RoomInheritance {
 	}
 	
 	//LEO
-	int getNumOfGold()
-	{
+	int getNumOfGold(){
 		return gold;
 	}
 }
